@@ -41,14 +41,14 @@
 		<dependency>
 			<groupId>com.ibm.websphere.appserver.runtime</groupId>
 			<artifactId>wlp-webProfile7</artifactId>
-			<version>16.0.0.4</version>
+			<version>${liberty}</version>
 			<type>zip</type>
 		</dependency>
 
 		<dependency>
 			<groupId>net.wasdev.maven.tools.targets</groupId>
 			<artifactId>liberty-target</artifactId>
-			<version>16.0.0.4</version>
+			<version>${liberty}</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
@@ -61,6 +61,8 @@
 		<wlpServerName>MVCServer</wlpServerName>
 		<testServerHttpPort>9080</testServerHttpPort>
 		<testServerHttpsPort>9443</testServerHttpsPort>
+
+		<liberty>17.0.0.2</liberty>
 	</properties>
 
 	<build>
@@ -76,7 +78,7 @@
 					<assemblyArtifact>
 						<groupId>com.ibm.websphere.appserver.runtime</groupId>
 						<artifactId>wlp-webProfile7</artifactId>
-						<version>16.0.0.4</version>
+						<version>${liberty}</version>
 						<type>zip</type>
 					</assemblyArtifact>
 					<assemblyInstallDirectory>${project.build.directory}</assemblyInstallDirectory>
