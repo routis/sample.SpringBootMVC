@@ -83,7 +83,7 @@
 					</assemblyArtifact>
 					<assemblyInstallDirectory>${project.build.directory}</assemblyInstallDirectory>
 					<!-- <configFile>src/main/liberty/config/server.xml</configFile> -->
-					<packageFile>${project.build.directory}/MVCServerPackage.jar</packageFile>
+					<packageFile>${project.build.directory}/app.jar</packageFile>
 					<bootstrapProperties>
 						<default.http.port>9080</default.http.port>
 						<default.https.port>9443</default.https.port>
